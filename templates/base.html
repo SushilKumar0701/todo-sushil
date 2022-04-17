@@ -15,7 +15,15 @@
     <title>{% block title %}{% endblock title %} - myTodo</title>
     <script defer data-domain="todo-sushiltodo.herokuapp.com" src="https://plausible.io/js/plausible.js"></script>
 
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NZMFEWB93"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5NZMFEWB93');
+    </script>
 </head>
 
 <body>
@@ -44,10 +52,10 @@
         </div>
     </nav>
     {% block body %}
->
+    >
     {% endblock body %}
 
-    
+
 </body>
 
 </html>
