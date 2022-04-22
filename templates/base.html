@@ -25,27 +25,31 @@
         gtag('config', 'G-5NZMFEWB93');
     </script>
 
-<script type="text/javascript">
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '625e4a768cc04765ad3a236f');
-      t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
-      t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
+    <script type="text/javascript">
+        var _gauges = _gauges || [];
+        (function () {
+            var t = document.createElement('script');
+            t.type = 'text/javascript';
+            t.async = true;
+            t.id = 'gauges-tracker';
+            t.setAttribute('data-site-id', '625e4a768cc04765ad3a236f');
+            t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+            t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+        })();
+    </script>
 
-<script async defer data-website-id="b4fcaaa1-7ac3-4981-b502-284dfbc1dbd0" src="http://localhost:3000/umami.js"></script>
+    <script async defer data-website-id="b4fcaaa1-7ac3-4981-b502-284dfbc1dbd0"
+        src="http://localhost:3000/umami.js"></script>
 
-<!-- Matomo -->
+    <!-- Matomo -->
 <script>
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setCookieDomain", "*.todo-sushiltodo.herokuapp.com"]);
+    _paq.push(["setDomains", ["*.todo-sushiltodo.herokuapp.com"]]);
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
     (function() {
@@ -56,8 +60,9 @@
       g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
     })();
   </script>
+  <noscript><p><img src="//localhost/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
   <!-- End Matomo Code -->
-  
+
 </head>
 
 <body>
